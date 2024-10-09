@@ -1,0 +1,14 @@
+<script>
+  const 입력 = prompt('정수를 입력해주세요.', '')
+  const 끝자리 = Number(입력[입력.length - 1])
+
+  if (끝자리 === 1 ||
+      끝자리 === 3 ||
+      끝자리 === 5 ||
+      끝자리 === 7 ||
+      끝자리 === 9) {
+    console.log('입력한 숫자는 홀수입니다.')
+    } else {
+      console.log('입력한 숫자는 짝수입니다.')
+    }
+</script>
