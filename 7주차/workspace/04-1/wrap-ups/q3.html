@@ -1,0 +1,21 @@
+<script>
+    // 비파괴적 처리
+    const strA = '사과,배,바나나,귤'
+    strA.split(',')
+    console.log(strA)
+
+    // 파괴적 처리
+    const arrayB = ['사과', '배', '바나나', '귤']
+    arrayB.push('감')
+    console.log(arrayB)
+
+    // 비파괴적 처리
+    const arrayC = [1, 2, 3, 4, 5]
+    arrayC.map((x) => x * x)
+    console.log(arrayC)
+
+    // 비파괴적 처리
+    const strD = '여백이 포함된 메시지 '
+    console.log(strD.trim())
+    console.log(strD)
+</script>
