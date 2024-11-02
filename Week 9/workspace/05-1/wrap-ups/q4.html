@@ -1,0 +1,29 @@
+<script>
+    const max = function(first, ...rests) {
+        if (Array.isArray(first)) {
+            let output = first[0]
+
+            for (const i of first) {
+                if (output < i) {
+                    output = i
+                }
+            }
+
+            return output
+        }
+        else {
+            let output = first
+
+            for (const i of rests) {
+                if (output < i) {
+                    output = i
+                }
+            }
+
+            return output
+        }
+    }
+
+    console.log(max([1, 2, 3, 4]))
+    console.log(max(1, 2, 3, 4))
+</script>

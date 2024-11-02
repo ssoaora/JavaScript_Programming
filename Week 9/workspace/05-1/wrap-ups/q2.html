@@ -1,0 +1,15 @@
+<script>
+    const max = function(arr) {
+        let output = arr[0]
+
+        for (const i of arr) {
+            if (output < i) {
+                output = i
+            }
+        }
+
+        return output
+    }
+
+    console.log(max([1, 2, 3, 4]))
+</script>
