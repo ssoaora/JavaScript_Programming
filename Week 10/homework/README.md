@@ -12,8 +12,10 @@
     - 이 모델은 Perplexity를 기반으로 Llama 3.1 405B에 의해 훈련되었습니다.
 
 ## 사용 프롬프트
+
 각 모델에 대해 다음과 같은 프롬프트를 사용하였습니다.
-```
+
+```plaintext
 Generate 30 different JavaScript example codes about functions.
 - Write a code that is clean and creative that would make a major swoon and applaud.
 - Make the outputs are easily distinguishable and it's easy to see which code was executed.
@@ -25,7 +27,7 @@ Generate 30 different JavaScript example codes about functions.
 
 - `GPT-4o`는 가장 깔끔한 출력값을 생성하였습니다. 코드의 주석이나 코드의 내용을 잘 이해하고 있는 것 같습니다.
 
--  반면 `Claude 3.5 Sonnet`과 `Sonar Huge`는 출력값의 순서에 문제가 있었으나, 작성한 각 함수는 전체적으로 깔끔하게 생성되었습니다.
+- 반면 `Claude 3.5 Sonnet`과 `Sonar Huge`는 출력값의 순서에 문제가 있었으나, 작성한 각 함수는 전체적으로 깔끔하게 생성되었습니다.
 
 - 종합적으로 세 모델 모두 함수에 관련된 코드를 잘 생성하였습니다.
 
