@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('h1').style.color = 'red'
+            document.querySelector('#header').style.backgroundColor = 'orange'
+            document.querySelector('.center .head').style.textAlign = 'center'
+            document.querySelector('[type=text]').style.borderRadius = '10px'
+            document.querySelector('body input').style.backgroundColor = 'blue'
+
+            for (const element of document.querySelectorAll('input')) {
+                element.style.backgroundColor = 'red'
+            }
+        })
+    </script>
+</head>
+<body>
+    <h1 id="header" class="center head">Hello World!</h1>
+    <input type="text">
+    <input>
+</body>
+</html>
